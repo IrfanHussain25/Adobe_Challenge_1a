@@ -84,3 +84,4 @@ Each PDF is converted into a .json file:
 ## 👨‍💻 Developed By
 ### Team Syn3rgy
 ### Submission for Adobe India Hackathon 2025
+
