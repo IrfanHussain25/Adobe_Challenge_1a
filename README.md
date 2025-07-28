@@ -36,13 +36,13 @@ All dependencies are either part of Python’s standard library or installable v
 
 ### 🐳 Build the Docker Image
 
-```
+```bash
 docker build --platform linux/amd64 -t round-1a .
 ```
 
 ### ▶️ Run the Container
 
-```
+```bash
 docker run --rm \
   -v "$(pwd)/sample_dataset/pdfs:/app/input:ro" \
   -v "$(pwd)/sample_dataset/outputs:/app/output" \
@@ -66,7 +66,7 @@ ADOBE_CHALLENGE_1A/
 ## 📤 Output Format
 Each PDF is converted into a .json file:
 
-```
+```json
 {
   "title": "Document Title",
   "outline": [
@@ -75,7 +75,7 @@ Each PDF is converted into a .json file:
       "text": "Section Heading",
       "page": 0
     },
-    ...
+    
   ]
 }
 ```
